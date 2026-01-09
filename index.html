@@ -148,6 +148,16 @@ article div {
   overflow-y: auto;
 }
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+	
 </style>
 </head>
 
@@ -229,19 +239,18 @@ article div {
 	пл. Съединение 3, ет. 4, офис 421</p>
 	<h2>Телефони</h2>
 	<p>
+	/*
 	089 541 0261	-	инж. Светлана Карналова</strong><br>
 	089 680 2352	-	инж. Елисавета Никова</strong><br>
 	087 698 9184	-	Деян Гавраилов</strong><br><br>
 	E-mail:			desplan@abv.bg</strong><br> 
-
+    */
 <p>
-  <strong>Телефони:</strong><br>
-
-  <script>
+   <script>
+	document.write('<a href="tel:05410261">089 541 0261</a> - инж. Светлана Карналова<br>');   
     document.write('<a href="tel:0896802352">089 680 2352</a> - инж. Елисавета Никова<br>');
     document.write('<a href="tel:0876989184">087 698 9184</a> - Деян Гавраилов<br>');
-    document.write('<a href="tel:05410261">089 541 0261</a> - инж. Светлана Карналова<br>');
-  </script>
+   </script>
 
   <noscript>
     089 541 0261 - инж. Светлана Карналова<br>
@@ -272,9 +281,3 @@ article div {
 </div>
 </body>
 </html>
-
-
-
-
-
-
