@@ -39,7 +39,7 @@ div + div article:nth-child(2) { background: #9f9fa3; }
 
 div + div article:nth-child(3) { background: #6d6e70; }
 
-div + div article:nth-child(4) { background: #ff0000; }
+div + div article:nth-child(4) { background: #c90000; }
 
 div + div article:nth-child(5), div + div { background: #000000; }
 
@@ -74,6 +74,10 @@ div + div article {
   padding: 2vh 1vw;
   position: relative;
 }
+
+/* Accessibility: readable text on the two light panels. */
+div + div article:nth-child(1),
+div + div article:nth-child(2) { color: #171717; }
 
 /* Big Headings */
 
@@ -197,7 +201,7 @@ a:hover {
 	КАДАСТЪР, РЕГУЛАЦИИ, ПРОЕКТИРАНЕ, ЗАСНЕМАНЕ, ТРАСИРАНЕ, ЕКЗЕКУТИВИ
 	</marquee>  
 </div>
-<div>
+<div role="main">
   <article>
     <h2>Проектиране</h2>
     <div>
